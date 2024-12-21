@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Add this line -->
+</head>
+
+
+<body>
+    <h1>Bus Booking Form</h1>
+
+    <div id="svg_wrap"></div>
+
+    <section>
+        <p>Step 1: Number of Seats</p>
+        <label for="seats">Number of Seats:</label>
+        <input type="number" id="seats" name="seats" placeholder="Enter number of seats">
+    </section>
+
+    <section>
+        <p>Step 2: Departure and Arrival</p>
+        <label for="departure">Departure:</label>
+        <select id="departure" name="departure">
+            <option value="">Select Departure</option>
+            <option value="City A">City A</option>
+            <option value="City B">City B</option>
+            <option value="City C">City C</option>
+        </select>
+
+        <label for="arrival">Arrival:</label>
+        <select id="arrival" name="arrival">
+            <option value="">Select Arrival</option>
+            <option value="City A">City A</option>
+            <option value="City B">City B</option>
+            <option value="City C">City C</option>
+        </select>
+    </section>
+
+    <section>
+        <p>Step 3: Contact Information</p>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+    </section>
+
+    <div class="button" id="prev">&larr; Previous</div>
+    <div class="button" id="next">Next &rarr;</div>
+    <div class="button" id="submit"><a href="pay.html" style="color: white; text-decoration: none;">BOOK NOW</a></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
